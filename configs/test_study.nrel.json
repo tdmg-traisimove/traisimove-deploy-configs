@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "ts": 1730107650,
+  "server": {
+    "connectUrl": "https://openpath.utoronto.dazadillon.io/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "intro": {
+    "program_or_study": "study",
+    "start_month": "start_month",
+    "start_year": "start_year",
+    "program_admin_contact": "program_admin_contact",
+    "deployment_partner_name": "deployment_partner_name",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "en_deployment_partner_name",
+        "deployment_name": "en_deployment_name",
+        "summary_line_1": "en_summary_line_1",
+        "summary_line_2": "en_summary_line_2",
+        "summary_line_3": "en_summary_line_3",
+        "short_textual_description": "en_short_textual_description",
+        "why_we_collect": "en_why_we_collect",
+        "research_questions": [
+          "en_research_questions_1",
+          "en_research_questions_2"
+        ]
+      }
+    }
+  },
+  "display_config": {
+    "use_imperial": false
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": false
+  },
+  "admin_dashboard": {
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "data_trips_columns_exclude": [
+      "data.start_loc.coordinates",
+      "data.end_loc.coordinates"
+    ],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_generate": false,
+    "token_prefix": "nrelop",
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "push_send": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "data_trajectories_columns_exclude": [
+      "user_id"
+    ]
+  }
+}
