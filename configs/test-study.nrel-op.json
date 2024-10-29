@@ -24,6 +24,19 @@
           "en_research_questions_1",
           "en_research_questions_2"
         ]
+      },
+      "fr": {
+        "deployment_partner_name": "fr_deployment_partner_name",
+        "deployment_name": "fr_deployment_name",
+        "summary_line_1": "fr_summary_line_1",
+        "summary_line_2": "fr_summary_line_2",
+        "summary_line_3": "fr_summary_line_3",
+        "short_textual_description": "fr_short_textual_description",
+        "why_we_collect": "fr_why_we_collect",
+        "research_questions": [
+          "fr_research_questions_1",
+          "fr_research_questions_2"
+        ]
       }
     }
   },
