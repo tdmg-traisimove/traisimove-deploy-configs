@@ -43,7 +43,7 @@
         }
     },
     "display_config": {
-        "use_imperial": true
+        "use_imperial": false
     },
     "profile_controls": {
         "support_upload": false,
