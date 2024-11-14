@@ -36,15 +36,6 @@
         "support_upload": false,
         "trip_end_notification": false
     },
-    "metrics": {
-        "phone_dashboard_ui": {
-            "footprint_options": {
-                "goals": {
-                    "goals_footnote": ""
-                }
-            }
-        }
-    },
     "admin_dashboard": {
         "overview_users": true,
         "overview_active_users": true,
