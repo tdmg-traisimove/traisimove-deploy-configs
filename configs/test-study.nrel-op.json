@@ -28,7 +28,7 @@
             }
         }
     },
-    "label_options": "https://raw.githubusercontent.com/tgm-openpath/e-mission-deploy-configs/refs/heads/main/label_options/traisi-label-options.json",
+    "label_options": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/label_options/traisi-label-options.json",
     "display_config": {
         "use_imperial": false
     },
