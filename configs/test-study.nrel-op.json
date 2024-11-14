@@ -8,19 +8,19 @@
     },
     "intro": {
         "program_or_study": "study",
-        "start_month": "8",
-        "start_year": "2022",
-        "program_admin_contact": "K. Shankari (k.shankari@nrel.gov)",
-        "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
+        "start_month": "11",
+        "start_year": "2024",
+        "program_admin_contact": "Professor Khandker Nurul Habib (khandker.nurulhabib@utoronto.ca)",
+        "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto)",
         "translated_text": {
             "en": {
-                "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
+                "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto",
                 "deployment_name": "Open Access Study",
                 "summary_line_1": "enables people to track their travel modes and measure their associated energy use and emissions",
                 "summary_line_2": "makes aggregated data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
                 "summary_line_3": "serves as a control group while evaluating behavior change of programs.",
-                "short_textual_description": "Transportation is the largest contributor to US greenhouse gas emissions. As the nation's premier facility for energy-efficient transportation R&D solutions, NREL’s sustainable transportation and mobility research takes a whole-system, human-centric approach to solve complex energy challenges and slash greenhouse gas emissions. As part of this approach we collect long-term travel behavior data that tells us how, where and why people travel.",
-                "why_we_collect": "NREL can use this information to understand how travel patterns change in response to federal, state and local interventions. These interventions can include programs, incentives and infrastructure changes. Since the data will be collected for a long time, changes can be directly observed instead of inferred from other data sources. The data can also serve as a control of unmodified behavior for programs that target a small sample of the population.",
+                "short_textual_description": "Transportation is the largest contributor to US greenhouse gas emissions. As the nation's premier facility for energy-efficient transportation R&D solutions, TDMG’s sustainable transportation and mobility research takes a whole-system, human-centric approach to solve complex energy challenges and slash greenhouse gas emissions. As part of this approach we collect long-term travel behavior data that tells us how, where and why people travel.",
+                "why_we_collect": "TDMG can use this information to understand how travel patterns change in response to federal, state and local interventions. These interventions can include programs, incentives and infrastructure changes. Since the data will be collected for a long time, changes can be directly observed instead of inferred from other data sources. The data can also serve as a control of unmodified behavior for programs that target a small sample of the population.",
                 "research_questions": [
                     "Comparing the open-access group (no intervention) and programs that provide interventions.",
                     "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
