@@ -62,7 +62,7 @@
           }
         ]
       },
-      "trip-labels": "MULTILABEL"
+      "trip-labels": "MULTILABEL+ENKETO"
     },
     "admin_dashboard": {
         "overview_users": true,
