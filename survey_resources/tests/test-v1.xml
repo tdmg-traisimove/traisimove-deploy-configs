@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>test</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <ay3RTP6WU7DiBgVZBtNqFN id="ay3RTP6WU7DiBgVZBtNqFN">
+          <start/>
+          <end/>
+          <What_is_your_answer/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </ay3RTP6WU7DiBgVZBtNqFN>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/ay3RTP6WU7DiBgVZBtNqFN/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/ay3RTP6WU7DiBgVZBtNqFN/end" type="dateTime"/>
+      <bind nodeset="/ay3RTP6WU7DiBgVZBtNqFN/What_is_your_answer" required="false()" type="string"/>
+      <bind jr:preload="uid" nodeset="/ay3RTP6WU7DiBgVZBtNqFN/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/ay3RTP6WU7DiBgVZBtNqFN/What_is_your_answer">
+      <label>What is your answer?</label>
+      <item>
+        <label>Option 1</label>
+        <value>option_1</value>
+      </item>
+      <item>
+        <label>Option 2</label>
+        <value>option_2</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>
