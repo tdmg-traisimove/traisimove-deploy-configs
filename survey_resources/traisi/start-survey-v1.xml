@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TRAISI_Move_Start_Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <ab6XaqSYmSDzyQ83BMYNDc id="ab6XaqSYmSDzyQ83BMYNDc">
+          <start/>
+          <end/>
+          <Please_enter_the_email_address/>
+          <Please_enter_the_six_letter_format_AAA/>
+          <May_we_contact_you_via_the_ema/>
+          <Please_provide_the_e_urther_communication/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </ab6XaqSYmSDzyQ83BMYNDc>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/end" type="dateTime"/>
+      <bind constraint="regex(., '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address" required="true()" type="string"/>
+      <bind constraint="regex(., '^[A-Za-z]{3}\d{3}$')" jr:constraintMsg="Code must be in following format: AAA###" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_six_letter_format_AAA" required="true()" type="string"/>
+      <bind nodeset="/ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema" required="true()" type="string"/>
+      <bind constraint="regex(., '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_provide_the_e_urther_communication" relevant=" /ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema  = 'no__i_would_prefer_to_be_conta'" required="false()" type="string"/>
+      <bind jr:preload="uid" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address">
+      <label>Please enter the email address you received the invitation for the multi-day travel survey project.</label>
+      <hint>(Make sure to type the email address accurately so we can link your responses with the invitation record.)</hint>
+    </input>
+    <input ref="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_six_letter_format_AAA">
+      <label>Please enter the six-digit invitation code provided in your invitation letter (format: AAA###).</label>
+      <hint>(Ensure that the code is entered accurately to confirm your eligibility to receive gift card compensation after completion of the tracking survey)</hint>
+    </input>
+    <select1 ref="/ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema">
+      <label>May we contact you via the email address you provided in Question 1?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No, I would prefer to be contacted through a different email address.</label>
+        <value>no__i_would_prefer_to_be_conta</value>
+      </item>
+    </select1>
+    <input ref="/ab6XaqSYmSDzyQ83BMYNDc/Please_provide_the_e_urther_communication">
+      <label>Please provide the email address you would like us to use for further communication.</label>
+    </input>
+  </h:body>
+</h:html>
