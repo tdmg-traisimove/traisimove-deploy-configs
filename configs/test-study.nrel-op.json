@@ -37,32 +37,38 @@
         "trip_end_notification": false
     },
     "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": { "en": "Answered" }
-      },
-      "TestSurvey": {
-        "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/tests/test-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/trip_user_input",
-        "labelTemplate": { "en": "Answered" }
-      }
-    },
-    "buttons": {
-        "trip-label": [
-          {
-            "surveyName": "TestSurvey",
-            "not-filled-in-label": { "en": "Test Survey" },
-            "showsIf": "true"
-          }
-        ]
-      },
-      "trip-labels": "MULTILABEL+ENKETO"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            },
+            "TestSurvey": {
+                "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/tests/test-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            }
+        },
+        "buttons": {
+            "trip-label": [
+                {
+                    "surveyName": "TestSurvey",
+                    "not-filled-in-label": {
+                        "en": "Test Survey"
+                    },
+                    "showsIf": "true"
+                }
+            ]
+        },
+        "trip-labels": "MULTILABEL+ENKETO"
     },
     "admin_dashboard": {
         "overview_users": true,
