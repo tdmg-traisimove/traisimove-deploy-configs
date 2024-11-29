@@ -1,6 +1,6 @@
 {
     "name": "test-study",
-    "version": 3,
+    "version": 4,
     "ts": 1730107650,
     "server": {
         "connectUrl": "https://openpath.utoronto.dazadillon.io",
@@ -46,29 +46,9 @@
                 "labelTemplate": {
                     "en": "Answered"
                 }
-            },
-            "TestSurvey": {
-                "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/tests/test-v1.xml",
-                "version": 1,
-                "compatibleWith": 1,
-                "dataKey": "manual/trip_user_input",
-                "labelTemplate": {
-                    "en": "Answered"
-                }
             }
         },
-        "buttons": {
-            "trip-label": [
-                {
-                    "surveyName": "TestSurvey",
-                    "not-filled-in-label": {
-                        "en": "Test Survey"
-                    },
-                    "showsIf": "true"
-                }
-            ]
-        },
-        "trip-labels": "MULTILABEL+ENKETO"
+        "trip-labels": "MULTILABEL"
     },
     "admin_dashboard": {
         "overview_users": true,
