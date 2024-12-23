@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>TRAISI_Move_Start_Survey</h:title>
+    <h:title>TRAISI Move Start Survey</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
         <ab6XaqSYmSDzyQ83BMYNDc id="ab6XaqSYmSDzyQ83BMYNDc">
           <start/>
           <end/>
+          <We_would_like_to_col_he_invitation_letter/>
           <Please_enter_the_email_address/>
           <Please_enter_the_six_letter_format_AAA/>
           <May_we_contact_you_via_the_ema/>
@@ -18,6 +19,7 @@
       </instance>
       <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/start" type="dateTime"/>
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/end" type="dateTime"/>
+      <bind nodeset="/ab6XaqSYmSDzyQ83BMYNDc/We_would_like_to_col_he_invitation_letter" required="false()" type="string"/>
       <bind constraint="regex(., '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address" required="true()" type="string"/>
       <bind constraint="regex(., '^[A-Za-z]{3}\d{3}$')" jr:constraintMsg="Code must be in following format: AAA###" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_six_letter_format_AAA" required="true()" type="string"/>
       <bind nodeset="/ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema" required="true()" type="string"/>
@@ -26,6 +28,9 @@
     </model>
   </h:head>
   <h:body>
+    <trigger ref="/ab6XaqSYmSDzyQ83BMYNDc/We_would_like_to_col_he_invitation_letter">
+      <label>We would like to collect your email and invitation code to record your participation in our study and to link your TRAISI Move trip diaries to the invitation letter.</label>
+    </trigger>
     <input ref="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address">
       <label>Please enter the email address you received the invitation for the multi-day travel survey project.</label>
       <hint>(Make sure to type the email address accurately so we can link your responses with the invitation record.)</hint>

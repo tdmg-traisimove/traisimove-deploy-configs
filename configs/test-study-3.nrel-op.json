@@ -39,16 +39,16 @@
     "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v1.xml",
+        "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v2.xml",
         "version": 1,
-        "compatibleWith": 1,
+        "compatibleWith": 2,
         "dataKey": "manual/demographic_survey",
         "labelTemplate": { "en": "Answered" }
       },
       "TestSurvey": {
         "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/tests/test-v1.xml",
         "version": 1,
-        "compatibleWith": 1,
+        "compatibleWith": 2,
         "dataKey": "manual/trip_user_input",
         "labelTemplate": { "en": "Answered" }
       }

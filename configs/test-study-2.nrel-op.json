@@ -1,6 +1,6 @@
 {
   "name": "test-study-2",
-  "version": 4,
+  "version": 5,
   "ts": 1730107650,
   "server": {
       "connectUrl": "https://openpath.utoronto.dazadillon.io",
@@ -39,9 +39,9 @@
   "survey_info": {
       "surveys": {
           "UserProfileSurvey": {
-              "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v1.xml",
-              "version": 1,
-              "compatibleWith": 1,
+              "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v2.xml",
+              "version": 2,
+              "compatibleWith": 2,
               "dataKey": "manual/demographic_survey",
               "labelTemplate": {
                   "en": "Answered"
