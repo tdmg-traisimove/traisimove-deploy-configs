@@ -1,6 +1,6 @@
 {
     "name": "test-study",
-    "version": 5,
+    "version": 7,
     "ts": 1730107650,
     "server": {
         "connectUrl": "https://openpath.utoronto.dazadillon.io",
@@ -49,6 +49,20 @@
             }
         },
         "trip-labels": "MULTILABEL"
+    },
+    "reminderSchemes": {
+        "daily": {
+            "title": {
+                "en": "Please take a moment to label your trips"
+            },
+            "text": {
+                "en": "Click to open the app and view unlabeled trips"
+            },
+            "schedule": [
+                { "start": 0, "end": 360, "intervalInDays": 1 }
+            ],
+            "defaultTime": "17:00"
+        }
     },
     "admin_dashboard": {
         "overview_users": true,
