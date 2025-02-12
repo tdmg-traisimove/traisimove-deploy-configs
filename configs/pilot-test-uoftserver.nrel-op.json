@@ -3,7 +3,7 @@
     "version": 5,
     "ts": 1730107650,
     "server": {
-        "connectUrl": "128.100.217.113:8080",
+        "connectUrl": "http://128.100.217.113:8080",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
