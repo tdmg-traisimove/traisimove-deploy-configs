@@ -3,7 +3,7 @@
     "version": 5,
     "ts": 1730107650,
     "server": {
-        "connectUrl": "http://moveserver.traisi.ca",
+        "connectUrl": "https://moveserver.traisi.ca",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
