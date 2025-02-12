@@ -20,10 +20,10 @@
       <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/start" type="dateTime"/>
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/end" type="dateTime"/>
       <bind nodeset="/ab6XaqSYmSDzyQ83BMYNDc/We_would_like_to_col_he_invitation_letter" required="false()" type="string"/>
-      <bind constraint="regex(., '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address" required="true()" type="string"/>
+      <bind constraint="regex(., '^[^@]+@[^@]+\.[^@]+$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_email_address" required="true()" type="string"/>
       <bind constraint="regex(., '^[A-Za-z]{3}\d{3}$')" jr:constraintMsg="Code must be in following format: AAA###" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_enter_the_six_letter_format_AAA" required="true()" type="string"/>
       <bind nodeset="/ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema" required="true()" type="string"/>
-      <bind constraint="regex(., '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_provide_the_e_urther_communication" relevant=" /ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema  = 'no__i_would_prefer_to_be_conta'" required="false()" type="string"/>
+      <bind constraint="regex(., '^[^@]+@[^@]+\.[^@]+$')" jr:constraintMsg="Please enter a valid email address." nodeset="/ab6XaqSYmSDzyQ83BMYNDc/Please_provide_the_e_urther_communication" relevant=" /ab6XaqSYmSDzyQ83BMYNDc/May_we_contact_you_via_the_ema  = 'no__i_would_prefer_to_be_conta'" required="false()" type="string"/>
       <bind jr:preload="uid" nodeset="/ab6XaqSYmSDzyQ83BMYNDc/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
