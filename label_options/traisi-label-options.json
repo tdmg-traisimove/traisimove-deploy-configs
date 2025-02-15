@@ -244,7 +244,7 @@
             "schoolbus": "School bus",
             "walk": "Walking",
             "cyclepers": "Cycling (personal bike)",
-            "cycleshare": "Cycling (personal bike)",
+            "cycleshare": "Cycling (shared bike)",
             "motorcycle": "Motorcycle",
             "other_mode": "Other (air, ferry, etc.)",
             "error": "Not a trip",
