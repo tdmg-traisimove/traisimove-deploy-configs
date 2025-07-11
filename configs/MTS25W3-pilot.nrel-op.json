@@ -1,21 +1,21 @@
 {
-    "name": "multiday-travel-survey-25W3-pilot",
+    "name": "TRAISI-Move-demo-survey",
     "version": 1,
     "ts": 1730107650,
     "server": {
-        "connectUrl": "https://digitalocean3.traisi.ca",
+        "connectUrl": "https://moveserver.traisi.ca",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
         "program_or_study": "study",
-        "start_month": "3",
+        "start_month": "7",
         "start_year": "2025",
         "program_admin_contact": "Professor Khandker Nurul Habib (khandker.nurulhabib@utoronto.ca)",
         "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto",
         "translated_text": {
             "en": {
                 "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto",
-                "deployment_name": "Multi-day Travel Survey Pilot",
+                "deployment_name": "TRAISI Move Demo Survey",
                 "summary_line_1": "enables people to track their travel modes and measure their associated energy use and emissions",
                 "summary_line_2": "makes aggregated data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
                 "summary_line_3": "serves as a control group while evaluating behavior change of programs.",
