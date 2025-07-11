@@ -1,0 +1,79 @@
+{
+    "name": "TRAISI-Move-demo-survey",
+    "version": 1,
+    "ts": 1730107650,
+    "server": {
+        "connectUrl": "https://moveserver.traisi.ca",
+        "aggregate_call_auth": "user_only"
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "7",
+        "start_year": "2025",
+        "program_admin_contact": "Professor Khandker Nurul Habib (khandker.nurulhabib@utoronto.ca)",
+        "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Travel Demand Modelling Group (TDMG) at the University of Toronto",
+                "deployment_name": "TRAISI Move Demo Survey",
+                "summary_line_1": "enables people to track their travel modes and measure their associated energy use and emissions",
+                "summary_line_2": "makes aggregated data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
+                "summary_line_3": "serves as a control group while evaluating behavior change of programs.",
+                "short_textual_description": "Transportation is the largest contributor to US greenhouse gas emissions. As the nation's premier facility for energy-efficient transportation R&D solutions, TDMG’s sustainable transportation and mobility research takes a whole-system, human-centric approach to solve complex energy challenges and slash greenhouse gas emissions. As part of this approach we collect long-term travel behavior data that tells us how, where and why people travel.",
+                "why_we_collect": "TDMG can use this information to understand how travel patterns change in response to federal, state and local interventions. These interventions can include programs, incentives and infrastructure changes. Since the data will be collected for a long time, changes can be directly observed instead of inferred from other data sources. The data can also serve as a control of unmodified behavior for programs that target a small sample of the population.",
+                "research_questions": [
+                    "Comparing the open-access group (no intervention) and programs that provide interventions.",
+                    "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+                ]
+            }
+        }
+    },
+    "label_options": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/label_options/traisi-label-options.json",
+    "display_config": {
+        "use_imperial": false
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/tdmg-traisimove/traisimove-deploy-configs/refs/heads/main/survey_resources/traisi/start-survey-v2.xml",
+                "version": 2,
+                "compatibleWith": 2,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": false,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "push_send": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
+    }
+}
